@@ -1,11 +1,6 @@
-w = 10
-l = 30
+w_kip_per_ft = 10.0 # UDL
+span_ft = 30.0      # simplly supported span
 
-load = w                    # in kip/ft
-beam_lenght = l              # ft
+m_max_kip_ft = (w_kip_per_ft*span_ft**2)/8
 
-m = (w*l**2)/8
-
-maximun_bending_moment = m    # in kip ft
-
-print("maimun bending:", m, "kip ft")
+print("Maximum bending:", m_max_kip_ft, "kip ft")
